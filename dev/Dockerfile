@@ -5,7 +5,7 @@ WORKDIR /tmp
 
 RUN apt-get update \
     && apt-get --yes --quiet upgrade \
-    && apt-get --yes --quiet install git build-essential
+    && apt-get --yes --quiet install git build-essential curl vim
 
 # Set locale to use UTF-8
 #RUN locale-gen en_US.UTF-8
